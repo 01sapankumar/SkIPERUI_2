@@ -7,6 +7,7 @@ import ThemeChange from '@/components/homeCards/ThemeChange'
 import HeroContent from '@/components/landingPage/HeroContent'
 import Navbar from '@/components/navbar/Navbar'
 import React from 'react'
+import Footer from '@/components/homeCards/Fotter'
 
 const page = () => {
   return (
@@ -18,6 +19,7 @@ const page = () => {
       <SpecialCard />
       <AiInputCard />
       <ThemeChange />
+      <Footer />
     </div>
   )
 }
