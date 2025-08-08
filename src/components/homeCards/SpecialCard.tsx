@@ -48,10 +48,10 @@ const SpecialCard = () => {
                         "pointer-events-none w-[90%] overflow-hidden rounded-t-[24px] border border-stone-100/10 transition-all duration-500 dark:border-stone-700",
                         "left-[5%] top-[50%] md:left-1/2 md:left-[68px] md:top-[30%]"
                     )}
-                    step4imgClass={cn(
-                        "pointer-events-none w-[90%] overflow-hidden rounded-t-[24px] border border-stone-100/10 transition-all duration-500 dark:border-stone-700",
-                        "left-[5%] top-[50%] md:left-1/2 md:left-[68px] md:top-[30%]"
-                    )}
+                 //   step4imgClass={cn(
+                   //     "pointer-events-none w-[90%] overflow-hidden rounded-t-[24px] border border-stone-100/10 transition-all duration-500 dark:border-stone-700",
+                     //   "left-[5%] top-[50%] md:left-1/2 md:left-[68px] md:top-[30%]"
+                  //  )}
                     image={{
                         step1light1: card4,
                         step1light2: card5,
@@ -64,7 +64,7 @@ const SpecialCard = () => {
                         step3light: card8,
                         step3dark: card8, // added dark
                         step4light: card8,
-                        step4dark: card8, // added dark
+                       // step4dark: card8, // added dark
                         alt: "Something",
                     }}
                 />
