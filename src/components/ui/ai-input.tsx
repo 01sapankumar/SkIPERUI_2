@@ -84,21 +84,17 @@ export default function AiInput() {
   const [imagePreview, setImagePreview] = useState<string | null>(null)
   const fileInputRef = useRef<HTMLInputElement>(null)
 
-  const handelClose = (e: any) => {
-    e.preventDefault()
-    e.stopPropagation()
-    if (fileInputRef.current) {
-      fileInputRef.current.value = "" // Reset file input
-    }
-    setImagePreview(null) // Use null instead of empty string
-  }
+  const handelClose = (e: React.MouseEvent<HTMLButtonElement | HTMLDivElement>) => {
+  e.preventDefault()
+  e.stopPropagation()
+  if (fileInputRef.current) fileInputRef.current.value = ""
+  setImagePreview(null)
+}
 
-  const handelChange = (e: any) => {
-    const file = e.target.files ? e.target.files[0] : null
-    if (file) {
-      setImagePreview(URL.createObjectURL(file))
-    }
-  }
+const handelChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const file = e.target.files?.[0] || null
+  if (file) setImagePreview(URL.createObjectURL(file))
+}
 
   const handleSubmit = () => {
     setValue("")
