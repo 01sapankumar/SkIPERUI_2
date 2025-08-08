@@ -7,7 +7,7 @@ const HeroContent = () => {
     <>
     <div className="flex flex-col items-center py-16">
       <img
-        className="h-10 mb-14"
+        className="h-10 mb-13"
         src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=806890&theme=light&t=1737565356562"
         alt=""
       />
